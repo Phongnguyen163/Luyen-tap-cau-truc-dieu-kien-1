@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Nhập tuổi" id="age">
+<button onclick="Ktra()">Kiểm tra</button>
+<h1 id="rs"></h1>
+<script>
+    function Ktra() {
+        let a = document.getElementById('age');
+        if (a.value >= 15) {
+            document.getElementById('rs').innerHTML = "Đủ điều kiện học lớp 10";
+        }
+        else {
+            document.getElementById('rs').innerHTML = "Không đủ điều kiện học lớp 10";
+        }
+    }
+</script>
+</body>
+</html>

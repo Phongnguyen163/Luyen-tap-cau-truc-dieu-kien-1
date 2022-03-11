@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Nhap a" id="s1">
+<input type="text" placeholder="Nhap b" id="s2">
+<input type="text" placeholder="Nhap c" id="s3">
+<button onclick="Check()">Check</button>
+<h1 id="max"></h1>
+<script>
+    function Check() {
+        let a = document.getElementById('s1');
+        let b = document.getElementById('s2');
+        let c = document.getElementById('s3');
+        let max = +a.value;
+        if (+b.value > max) {
+            max = +b.value;
+        }
+        if (+c.value > max) {
+            max = +c.value;
+        }
+        document.getElementById('max').innerHTML = "Gía trị lớn nhất trong 3 số là: " + max;
+    }
+</script>
+</body>
+</html>

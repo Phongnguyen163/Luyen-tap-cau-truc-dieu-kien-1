@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Dmon1" id="m1">
+<input type="text" placeholder="Dmon2" id="m2">
+<input type="text" placeholder="Dmon3" id="m3">
+<button onclick="Tinh()">Điểm TB</button>
+<h1 id="show"></h1>
+<script>
+    function Tinh() {
+        let a = document.getElementById('m1');
+        let b = document.getElementById('m2');
+        let c = document.getElementById('m3');
+        let TB = (+a.value + b.value*2 + c.value*3) /6 ;
+        if (TB >= 8) {
+            document.getElementById('show').innerHTML = "HSG";
+        }
+        if (TB >= 6.5 && TB < 8) {
+            document.getElementById('show').innerHTML = "HSK";
+        }
+        if (TB < 6.5) {
+            document.getElementById('show').innerHTML = "HSTB";
+        }
+    }
+</script>
+</body>
+</html>

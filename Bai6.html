@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Nhap doanh so" id="ds">
+<input type="text" placeholder="Nhap hoa hong" id="hh">
+<button onclick="Tinh()">Hoa Hong</button>
+<p id="rs"></p>
+<script>
+    function Tinh() {
+        let a = document.getElementById('ds');
+        let b = document.getElementById('hh');
+        let LN = a.value * b.value / 100;
+        document.getElementById('rs').innerHTML = "Hoa hong nhan duoc la: " + LN;
+    }
+</script>
+</body>
+</html>

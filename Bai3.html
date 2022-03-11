@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Nhap 1 so bat ky" id="s1">
+<button onclick="Kiemtra()">Check</button>
+<h1 id='show'></h1>
+<script>
+    function Kiemtra() {
+        let a = document.getElementById('s1');
+        let b = +a.value;
+        if (b > 0) {
+            document.getElementById('show').innerHTML = "Số đã nhập lớn hơn 0";
+        } else if (b == 0) {
+            document.getElementById('show').innerHTML = "Số đã nhập bằng 0";
+        } else {
+            document.getElementById('show').innerHTML = "Số đã nhập nhỏ hơn 0";
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Nhập a" id="s1">
+<input type="text" placeholder="Nhập b" id="s2">
+<button onclick="Ktra()">Kiểm tra</button>
+<h1 id="rs"></h1>
+<script>
+    function Ktra() {
+        let sh1 = document.getElementById('s1');
+        let sh2 = document.getElementById('s2');
+        let a = parseInt(sh1.value);
+        let b = parseInt(sh2.value);
+        if (a % b == 0) {
+            document.getElementById('rs').innerHTML = a +" chia hết cho " + b ;
+        }
+    }
+</script>
+</body>
+</html>
